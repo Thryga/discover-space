@@ -27,7 +27,8 @@ import { GallerypfmComponent } from './picfrommars/gallerypfm/gallerypfm.compone
 const appRoutes: Routes = [
   { path: 'Gallerypotd', component: GallerypotdComponent
   },
-  { path: 'Gallerypfm', component: GallerypfmComponent}
+  { path: 'Gallerypfm', component: GallerypfmComponent},
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
