@@ -5,7 +5,7 @@
                 <h2 class="categorytitle">{{title}}</h2>
                 <button type="button" (click)="dateminus()">-</button>
                 <button type="button" (click)="dateplus()">+</button>
-                <img *ngIf="loading" class="loader" alt="loading" src="src/assets/img/loading.gif">
+                <img *ngIf="loading" class="loader" alt="loading" src="assets/img/loading.gif"><!--En dev local mettre ../assets/....-->
                 <img (load)="onLoad()" class="pic" src="{{photo.url}}"/>
                 <div class="pictitle" *ngIf="!loading">{{photo.title}}</div>
                 <md2-datepicker [(ngModel)]="date" (ngModelChange)="onDateChange()" 
