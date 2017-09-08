@@ -129,7 +129,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var appRoutes = [
     { path: 'Gallerypotd', component: __WEBPACK_IMPORTED_MODULE_15__picoftheday_gallerypotd_gallerypotd_component__["a" /* GallerypotdComponent */]
     },
-    { path: 'Gallerypfm', component: __WEBPACK_IMPORTED_MODULE_16__picfrommars_gallerypfm_gallerypfm_component__["a" /* GallerypfmComponent */] }
+    { path: 'Gallerypfm', component: __WEBPACK_IMPORTED_MODULE_16__picfrommars_gallerypfm_gallerypfm_component__["a" /* GallerypfmComponent */] },
+    { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 var AppModule = (function () {
     function AppModule() {
